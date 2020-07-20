@@ -67,6 +67,46 @@ int main(int argc, char* argv[])
 
 ## ソースコードの説明
 
+1.12: 関数r_unifを宣言
+
+1.13: 関数r_stdnormを宣言
+
+1.17: int型の変数num_dummyを宣言
+
+1.18: double型の変数muを宣言
+
+1.19: double型の変数sigmaを宣言
+
+1.20: int型の変数iを宣言
+
+1.21: double型の変数dummyを宣言
+
+1.23: 文字列argv[1]をdouble型としてmuに読み込む
+
+1.24: 文字列argv[2]をdouble型としてsigmaに読み込む
+
+1.25: 文字列argv[3]をint型としてnum_dummyに読み込む
+
+1.28: 変数muを出力
+
+1.29: 変数sigmaを出力
+
+1.30: 変数num_dummyを出力
+
+1.34: i=1、i <=5、i++という条件のもと関数forで繰り返し処理を行う
+
+1.36: 変数dummyにmu + r_stdnorm()を代入
+
+1.37: 変数dummyを出力
+
+1.43: 関数r_unifを制作
+
+1.45: (rand()+1)/(RAND_MAX+2)を返す
+
+1.48: 関数r_stdnormを制作
+
+1.49: sqrt(-2.0*log(r_unif())) * sin(2.0*M_PI*r_unif())を返す
+
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
