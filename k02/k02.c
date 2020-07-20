@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#define mu_a 170.8
+#define sigma_a 5.43
+#define mu_b 169.7
+#define sigma_b 5.5
 
 extern double p_stdnorm(double y);
 
@@ -11,7 +15,7 @@ int main(void)
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    double L1=1,L2=1,mu_a=170.8,sigma_a=5.43,mu_b=169.7,sigma_b=5.5,y_a,y_b,p_a,p_b;
+    double L1=1,L2=1,y_a,y_b,p_a,p_b;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -41,8 +45,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %10.2e\n",L1);
-    printf("L_B: %10.2e\n",L2);
+    printf("Likelihood for A: %10.2e\n",L1);
+    printf("Likelihood for B: %10.2e\n",L2);
 
     return 0;
 
