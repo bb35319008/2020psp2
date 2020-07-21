@@ -132,4 +132,6 @@ Num of dummy data: 5
 
 [comment #20200721 moto]
 - OKです。
-  
+
+[comment #20200721 sonoda]
+- 「コンパイル時に`-DCONST_SEED`をつけない場合」の入出力結果も載せてください．（大丈夫と思うけど）
