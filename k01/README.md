@@ -77,23 +77,27 @@ aa83988848 薗田光太郎
 
 1.41: 変数uにSにn/(n-1)をかけて求めた不偏分散を代入
 
-1.43: 標本平均A及び標本分散Sを出力
+1.43: 標本平均aveを出力
 
-1.44: 母集団の平均A及び不偏分散uを出力
+1.44: 標本分散Sを出力
+
+1.45: 母集団の平均aveを出力
+
+1.46: 不偏分散uを出力
 
 1.49: 関数ave_onlineを制作
 
-1.51: 変数aveにave*(n-1)/n + val/nを計算して求められた標本平均を代入
+1.51: 変数aにave*(n-1)/n + val/nを計算して求められた標本平均を代入
 
-1.52: 変数aveを返す
+1.52: 変数aを返す
 
 1.55: 関数var_onlineを制作
 
-1.57: 変数Aに標本平均ave_onineを代入
+1.57: 変数aaにave*(n-1)/2 + val/nを代入
 
-1.59: 変数square_aveにsquare_ave*(n-1)/n + val^(2/n)を計算して求めたデータの2乗の平均を代入
+1.59: 変数zにsquare_ave*square_ave*(n-1)/n + val*val/nを計算して求めたデータの2乗の平均を代入
 
-1.61: 変数sにsquare_ave - A^2を計算して求めた標本分散を代入
+1.61: 変数sにz - aa*aaを計算して求めた標本分散を代入
 
 1.63: 変数sを返す
 
@@ -102,9 +106,9 @@ aa83988848 薗田光太郎
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
+sample mean：173.89
 sample variance：
-population mean (estimated)：
+population mean (estimated)：173.89
 population variance (estimated)：
 ```
 
