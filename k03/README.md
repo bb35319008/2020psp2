@@ -132,4 +132,6 @@ Num of dummy data: 5
 
 [comment #20200721 moto]
 - OKです。
-  
+
+[comment #20200721 sonoda]
+- `gcc -o k03 k03.c`で作った実行ファイルでの入出力結果と，`gcc -o k03 k03.c -DCONST_SEED`で作った実行ファイルでの入出力結果を書いてください．
