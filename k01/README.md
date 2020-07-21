@@ -110,4 +110,23 @@ population variance (estimated)：
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200721 moto
+- 実行してみると、
+  ```
+  input the filename of sample:../sample/heights_male.csv
+  the filename of sample: ../sample/heights_male.csv
+  Sample's average is 21.39, Sample's variance is -456.43.
+  Population's average is 21.39, Population's variance is -513.48.
+  ```
+  となりました。平均も分散も答えが間違ってるみたいです。
+  修正方法ですが、ave_omline関数の中に、printf("ave:%lf  val:%lf  n:%d\n",ave,val,n)
+  と書いて、それぞれの値がどう変化していくかを見ていくとわかりやすいかと思います。
+  また、この箇所だけではなく、いろんな箇所にprintfを入れて、値の変化をみていってみましょう。
+
+- 9行目に、グローバル変数として、aveやsなどを書いていますが、
+  ave_online関数やvar_online関数などでは、returnを使ってaveやsを返しています。
+  この書き方はよろしくありません。
+  (グローバル変数で宣言している変数は、どの関数でも値は見れるので、返す必要がなくなるため)
+  今回はグローバル変数をなくして書いてみましょう。
+  (main関数の中にaveなどを宣言して書いてみましょう)
+  
