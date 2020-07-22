@@ -45,8 +45,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("Likelihood for A: %10.2e\n",L1);
-    printf("Likelihood for B: %10.2e\n",L2);
+    printf("Likelihood for A: %lf\n",L1);
+    printf("Likelihood for B: %lf\n",L2);
 
     return 0;
 

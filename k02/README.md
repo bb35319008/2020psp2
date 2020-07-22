@@ -74,8 +74,8 @@ aa83988848 薗田光太郎
 ## 入出力結果
 
 ```
-Likelihood for A：5.46e-006
-Likelihood for B：2.20e-006
+Likelihood for A：0.000006
+Likelihood for B：0.000002
 ```
 
 ## 修正履歴
