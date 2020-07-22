@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    int id, idf, z=1, gender[15], i;
+    int id, idf, z=0, gender[15], i;
     double gender_num, height, heights[15];
     char fname1[FILENAME_MAX], fname2[FILENAME_MAX];
     char buf1[256], buf2[256];
