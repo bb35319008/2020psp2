@@ -8,7 +8,7 @@ int main(void)
     int id, idf, z=1, gender[15], i;
     double gender_num, height, heights[15];
     char fname1[FILENAME_MAX], fname2[FILENAME_MAX];
-    char buf2[256];
+    char buf1[256], buf2[256];
     FILE* fp1;
     FILE* fp2;
 
@@ -35,7 +35,8 @@ int main(void)
     printf("Which ID's data do you want? : ");
     scanf("%d", &id);
 
-    for(i = 0; i < 15; i++){
+    fgets(buf1,sizeof(buf1),fp1);
+    for(i = 1; i < 15; i++){
         fscanf(fp1, "%d, %lf", &gender[i], &heights[i]);
     }
 
