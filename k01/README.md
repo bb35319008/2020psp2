@@ -47,59 +47,59 @@ aa83988848 薗田光太郎
 
 1.7: 標本の分散を求める関数var_onlineを宣言
 
-1.8: int型の変数nを宣言し、1を代入
+1.11: double型の変数S、ave、square_ave、n、u、valを宣言し、nに1を代入
 
-1.9. double型の変数ave、val、s、A、S、square_aveを宣言し、aveに0を代入
+1.17: データファイル名を入力させ、fnameに格納
 
-1.13: double型の変数uを宣言
+1.18: 入力させた文字列の最後にエンターキーが入っているので、fnameの文字列の最後をヌル文字'\0'に置換
 
-1.19: データファイル名を入力させ、fnameに格納
+1.19: fnameを確認
 
-1.20: 入力させた文字列の最後にエンターキーが入っているので、fnameの文字列の最後をヌル文字'\0'に置換
+1.21: fnameで指定したファイルの先頭アドレスをファイルポインタ fp に読み込む
 
-1.21: fnameを確認
+1.22: もしfpがNULLだったときは、ファイルを開けなかったので、即座にプログラム終了
 
-1.23: fnameで指定したファイルの先頭アドレスをファイルポインタ fp に読み込む
+1.27: ファイルを1行ずつbufに読み込む。もし読み込み成功する限り以下を繰り返す
 
-1.24: もしfpがNULLだったときは、ファイルを開けなかったので、即座にプログラム終了
+1.28: bufからscanfで数値文字列を実数としてvalに読み込む
 
-1.29: ファイルを1行ずつbufに読み込む。もし読み込み成功する限り以下を繰り返す
+1.30: 変数square_aveにave_online(val * val, square_ave, n)を代入
 
-1.30: bufからscanfで数値文字列を実数としてvalに読み込む
+1.31: 変数Sにvar_online(val, ave, square_ave, n)を代入
 
-1.31: 変数Aに関数ave_onlineにより求められた標本平均を代入して更新
+1.32: 変数aveにave_online(val, ave, n)を代入
 
-1.32: 変数Aに関数var_onlineにより求められた標本分散を代入して更新
-
-1.33: 変数nに1を足して変数nに代入して更新
+1.33: n++を実行
 
 1.36: ファイルを閉じる。閉じれないときは、即座にプログラム終了
 
-1.41: 変数uにSにn/(n-1)をかけて求めた不偏分散を代入
+1.41: このままだと標本の個数 n が実際の個数より1つ多くなってしまうので n-- を実行して n を1つ減らす。
 
-1.43: 標本平均aveを出力
+1.43: 変数uにSにn/(n-1)をかけて求めた不偏分散を代入
 
-1.44: 標本分散Sを出力
+1.45: 標本平均aveを出力
 
-1.45: 母集団の平均aveを出力
+1.46: 標本分散Sを出力
 
-1.46: 不偏分散uを出力
+1.47: 母集団の平均aveを出力
 
-1.49: 関数ave_onlineを制作
+1.48: 不偏分散uを出力
 
-1.51: 変数aにave*(n-1)/n + val/nを計算して求められた標本平均を代入
+1.53: 関数ave_onlineを制作
 
-1.52: 変数aを返す
+1.55: double型の変数aを宣言
 
-1.55: 関数var_onlineを制作
+1.57: 変数aにave * (n - 1)/n + val / nを計算して求められた標本平均を代入
 
-1.57: 変数aaにave*(n-1)/2 + val/nを代入
+1.59: 変数aを返す
 
-1.59: 変数zにsquare_ave*square_ave*(n-1)/n + val*val/nを計算して求めたデータの2乗の平均を代入
+1.62: 関数var_onlineを制作
 
-1.61: 変数sにz - aa*aaを計算して求めた標本分散を代入
+1.64: double型の変数sを代入
 
-1.63: 変数sを返す
+1.66: 変数sにsquare_ave - ave_online(val, ave, n) * ave_online(val, ave, n)を代入
+
+1.68: 変数sを返す
 
 ## 入出力結果
 
@@ -107,9 +107,9 @@ aa83988848 薗田光太郎
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
 sample mean：173.89
-sample variance：
+sample variance：25.36
 population mean (estimated)：173.89
-population variance (estimated)：
+population variance (estimated)：28.98
 ```
 
 ## 修正履歴
