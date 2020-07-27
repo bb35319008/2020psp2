@@ -134,3 +134,6 @@ population variance (estimated)：28.98
   今回はグローバル変数をなくして書いてみましょう。
   (main関数の中にaveなどを宣言して書いてみましょう)
   
+
+  [comment #20200727 moto]
+- OKです。

@@ -107,3 +107,6 @@ Likelihood for B：0.000002
   L1 = L1 * (p_a / sigma_a);を
   L1 = L1 * p_a;
   に変えてみてください。(L2も同様に)
+
+  [comment #20200727 moto]
+- OKです。
