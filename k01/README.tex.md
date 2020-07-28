@@ -110,4 +110,6 @@ population variance (estimated)：
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200707 kotaro]
+- 入出力結果をReadme.tex.mdに追記してください．その結果が正しければ，課題1が完了になると思います．
+

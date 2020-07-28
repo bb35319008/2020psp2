@@ -57,9 +57,9 @@ aa83988848 薗田光太郎
 
 1.37: 変数p_bにp_stdnorm(y_b)を代入
 
-1.39: 変数L1にL1 * (p_a / sigma_a)を代入
+1.39: 変数L1にL1 * p_aを代入
 
-1.40: 変数L2にL2 * (p_b / sigma_b)を代入
+1.40: 変数L2にL2 * p_bを代入
 
 1.43: ファイルを閉じる。閉じれないときは、即座にプログラム終了
 
@@ -67,15 +67,15 @@ aa83988848 薗田光太郎
 
 1.49: 変数L2があまりにも小さすぎて普通に表示しようとすると0になるので指数部付きで出力
 
-1.56: 関数p_stdnormを制作
+1.55: 関数p_stdnormを制作
 
-1.58: 1/sqrt(2*M_PI) * exp(-y*y/2)を返す
+1.57: 1/sqrt(2*M_PI) * exp(-y*y/2)を返す
 
 ## 入出力結果
 
 ```
-Likelihood for A：7.46e-012
-Likelihood for B：2.63e-012
+Likelihood for A：0.000006
+Likelihood for B：0.000002
 ```
 
 ## 修正履歴
@@ -107,3 +107,6 @@ Likelihood for B：2.63e-012
   L1 = L1 * (p_a / sigma_a);を
   L1 = L1 * p_a;
   に変えてみてください。(L2も同様に)
+
+  [comment #20200727 moto]
+- OKです。

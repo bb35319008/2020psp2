@@ -36,8 +36,8 @@ int main(void)
         p_a = p_stdnorm(y_a);
         p_b = p_stdnorm(y_b);
 
-        L1 = L1 * (p_a / sigma_a);
-        L2 = L2 * (p_b / sigma_b);
+        L1 = L1 * p_a;
+        L2 = L2 * p_b;
     }
 
     if(fclose(fp) == EOF){
@@ -45,11 +45,10 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("Likelihood for A: %10.2e\n",L1);
-    printf("Likelihood for B: %10.2e\n",L2);
+    printf("Likelihood for A: %lf\n",L1);
+    printf("Likelihood for B: %lf\n",L2);
 
     return 0;
-
 
 }
 
