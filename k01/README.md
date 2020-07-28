@@ -135,5 +135,8 @@ population variance (estimated)：28.98
   (main関数の中にaveなどを宣言して書いてみましょう)
   
 
-  [comment #20200727 moto]
+[comment #20200727 moto]
 - OKです。
+
+[comment #20200728 sonoda]
+- 課題１の完了を確認しました
