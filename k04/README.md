@@ -112,5 +112,7 @@ No data
   宣言はid[9]ですが、実際に使用できるのはid[0]~id[8]まで
   です。(idf[9]も同様)
 
-  [comment #20200727 moto]
+[comment #20200727 moto]
 - OKです。
+[comment #20200728 sonoda]
+- 課題4の完了を確認しました．
