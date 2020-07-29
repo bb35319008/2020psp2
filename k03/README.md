@@ -176,3 +176,5 @@ Num of dummy data: 5
  ```
  
   というところがありますが，入力されたsigmaやnum_dummyはどこで使われていますか？使ってください．
+[comment #20200730 sonoda]
+- 課題3完了です．
